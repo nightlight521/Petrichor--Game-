@@ -1,0 +1,82 @@
+LEVEL BUILDER
+#Level:
+0 1
+# Starting Offset:
+7 0 0
+# Starting Character Positions:
+8 20 250
+#Platforms
+#Type, x, y, width, height, elevator or not
+1 0 250 300 30 n
+1 0 400 600 30 n 
+1 600 250 400 30 n
+1 800 500 700 30 n 
+1 200 700 1300 30 n
+# Levers:
+# Type id x y width height state
+2 l1 50 300 104 103 off
+2 l2 1000 400 104 103 off
+2 l3 1100 600 104 103 off
+2 l4 400 1000 104 103 off 
+2 l5 800 1000 104 103 off
+# Coins:
+# Type x y radius
+3 200 370 10
+3 240 370 10
+3 280 370 10
+3 320 370 10
+3 630 220 10
+3 670 220 10
+3 710 220 10
+3 900 670 10
+3 940 670 10
+3 980 670 10
+3 1020 670 10
+3 1060 670 10
+3 1300 670 10
+3 1340 670 10
+3 1380 670 10
+3 1420 670 10
+3 1200 470 10
+3 1240 470 10
+3 1280 470 10
+3 1320 470 10
+3 1360 470 10
+3 700 970 10
+3 660 970 10
+3 620 970 10
+3 580 970 10
+3 120 970 10
+3 160 970 10
+3 200 970 10
+# Walls:
+# Type x y width height
+4 600 250 30 180
+# Doors and Symbols:
+# A door is in the format:
+# Type x y width height direction numSymbols
+#   with the next numSymbols lines being symbols corresponding to that door, in the format:
+# A symbol is in the format:
+# x y symbolType state correctState numLevers
+#   followed by numLevers lines of lever ids
+5 870 0 30 280 vertical 1
+750 30 square1 off on 1
+l1
+5 0 700 230 30 horizontal 2
+50 480 triangle1 off on 1
+l2
+50 580 triangle2 off on 1
+l3
+5 1470 900 30 200 vertical 4
+400 800 circle1 on on 2
+l4
+l5
+480 800 circle1 off on 1
+l5
+560 800 circle1 off on 1
+l4
+640 800 circle1 off on 1
+l5
+# Portal:
+# Type x y width height
+6 1300 900 200 200

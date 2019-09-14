@@ -1,0 +1,125 @@
+# Level:
+0 2
+# Starting Offset:
+7 -700 -600
+# Starting Character Positions:
+8 1200 1100
+# Platforms
+# Type x y width height
+# if there is a letter e, this platform is also an elevator,
+# with the additional attributes of orientation and two boundaries
+1 1240 300 100 30 e 1000 300
+1 0 400 500 30 n 
+1 1380 703 120 30 n
+1 1100 503 140 30 n
+1 800 400 300 30 n
+1 300 200 500 30 n
+1 0 600 900 30 n
+# Levers:
+# Type id x y width height state
+2 l1 1130 1000 104 103 off
+2 l2 1400 600 104 103 on
+2 l3 1130 400 104 103 on
+2 l4 50 300 104 103 off
+2 l5 900 300 104 103 off
+2 l6 100 500 104 103 off
+2 l7 800 500 104 103 off
+2 l8 400 500 104 103 off
+2 l9 200 1000 104 103 off
+2 l10 400 1000 104 103 on
+2 l11 700 1000 104 103 off
+2 l12 1000 1000 104 103 off
+# Coins:
+# Type x y radius
+3 1200 200 10
+3 1200 300 10
+3 1200 400 10
+3 1200 500 10
+3 1200 600 10
+3 1200 700 10
+3 1200 800 10
+3 1200 900 10
+3 1200 1000 10
+3 200 370 10
+3 240 370 10
+3 300 370 10
+3 400 370 10
+3 800 370 10
+3 840 370 10
+3 310 170 10
+3 340 170 10
+3 380 170 10
+3 420 170 10
+3 500 170 10
+3 540 170 10
+3 580 170 10
+3 300 1000 10
+3 350 1000 10
+3 400 1000 10
+3 325 900 10
+3 375 900 10
+3 700 1000 10
+# Walls:
+# Type x y width height
+4 1100 400 30 800
+# Doors and Symbols:
+# A door is in the format:
+# Type x y width height direction numSymbols
+#   with the next numSymbols lines being symbols corresponding to that door, in the format:
+# x y symbolType state correctState numLevers
+#   followed by numLevers lines of lever ids
+5 1100 0 30 430 vertical 5
+1300 400 circle1 on on 1
+l3
+1300 500 circle1 off on 1
+l1
+1300 600 circle1 off on 2
+l2
+l3
+1300 700 circle1 off on 1
+l1
+1300 800 circle1 off on 1
+l1
+5 470 400 360 30 horizontal 2
+500 300 circle1 off on 1
+l4
+700 300 circle1 off off 1
+l5
+5 870 600 230 30 horizontal 5
+300 450 circle1 on off 2
+l6
+l8
+400 450 circle1 off on 2
+l6
+l7
+500 450 circle1 off off 2
+l7
+l8
+600 450 circle1 off on 2
+l6
+l7
+700 450 circle1 off off 1
+l7
+5 20 800 30 200 vertical 6
+200 730 circle1 on on 2
+l9
+l10
+300 730 circle1  on off 2
+l12
+l10
+400 730 circle1 on off 2
+l12
+l9
+500 730 circle1 on off 2
+l9
+l11
+600 730 circle1 off on 3
+l9
+l10
+l11
+700 730 circle1 off on 2
+l12
+l10
+# Portal:
+# Type x y width height
+6 0 900 200 200
